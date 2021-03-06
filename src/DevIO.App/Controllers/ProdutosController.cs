@@ -59,16 +59,20 @@ namespace DevIO.App.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProdutoViewModel produtoViewModel)
         {
-            produtoViewModel = await PopularFornecedores(new ProdutoViewModel());
+            produtoViewModel = await PopularFornecedores(produtoViewModel);
 
             if (!ModelState.IsValid) return View(produtoViewModel);
 
             var imgPrefixo = Guid.NewGuid() + "_";
 
             if (!await UploadArquivo(produtoViewModel.ImagemUpload, imgPrefixo))
+            {
                 return View(produtoViewModel);
+            }
 
             produtoViewModel.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName;
+
+            
 
             await _produtoRepository.Adicional(_mapper.Map<Produto>(produtoViewModel));
 

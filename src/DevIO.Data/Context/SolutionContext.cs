@@ -8,7 +8,8 @@ namespace DevIO.Data.Context
     {
         public SolutionContext(DbContextOptions options) : base(options)
         {
-
+            ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+            ChangeTracker.AutoDetectChangesEnabled = false;
         }
 
         public DbSet<Produto> Produtos { get; set; }
@@ -17,6 +18,8 @@ namespace DevIO.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Não sera sobre escrito as propriedades em mapping
+            //Caso não configure alguma propriedade em mapping, esse for each ira aplicar
             foreach (var property in modelBuilder.Model.GetEntityTypes()
                 .SelectMany(e => e.GetProperties()
                 .Where(e => e.ClrType == typeof(string))))

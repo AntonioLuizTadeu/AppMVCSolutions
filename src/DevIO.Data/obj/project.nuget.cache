@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KxmJdwRMQeF0Xo3xZ9PvuZ3IJJbZ8BQCy2WL5u/u8knrQbcG+AU8/PMM1gx2ihAdyMESKx9HYdIqnGSAIR66Fg==",
+  "dgSpecHash": "lAuDpnm3kwbNLbZXxLXkabsGoezICBjbidO0aZmQ3qMbbe/uDYEb0t6n0xdI3XEZKPDHCNprEHw9Ga18xSrYCQ==",
   "success": true,
   "projectFilePath": "C:\\Dev-Desenvolvedor-IO\\AppMVCSolutions\\src\\DevIO.Data\\DevIO.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Antonio TI\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Antonio TI\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Antonio TI\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

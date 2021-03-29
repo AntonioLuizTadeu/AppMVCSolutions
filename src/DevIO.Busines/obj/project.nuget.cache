@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+vlndNJBf65Ux3p1SsusuGJfQhggtsM7R69GUoA+6d29FRK7Xotq+mFVGdjFxfyirOMnJax936W8CrNoCbdlFg==",
+  "dgSpecHash": "0jNhqlQJxJGVDXW2izKljh5CaXaJAHZ8O0/j07IsL9dT3fLnJ8z3hyaED3uiLWqU8k2VmO2eH0qJvJG3anS7qg==",
   "success": true,
   "projectFilePath": "C:\\Dev-Desenvolvedor-IO\\AppMVCSolutions\\src\\DevIO.Busines\\DevIO.Busines.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Antonio TI\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512"
+  ],
   "logs": []
 }

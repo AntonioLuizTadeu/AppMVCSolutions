@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DevIO.App.ViewModels
 {
@@ -17,7 +15,7 @@ namespace DevIO.App.ViewModels
         public string Nome { get; set; }
 
         [Required(ErrorMessage ="O campo {0} é obrigatório")]
-        [StringLength(14,ErrorMessage ="O campo {0} precisa ter {1} caracteres",MinimumLength =14)]
+        [StringLength(14,ErrorMessage ="O campo {0} precisa ter {2} e {1} caracteres",MinimumLength = 11)]
         public string Documento { get; set; }
 
         [DisplayName("Tipo")]
